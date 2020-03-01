@@ -1,0 +1,141 @@
+/* layout */
+body {
+	font-size: .75em;
+	line-height: 1.5;
+	font-family: arial, helvetica, sans-serif;
+	background-image: url(../images/bg.jpg);
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 900px;
+	margin: auto;
+	margin-top: -29px;
+}
+
+.top_header {
+	border-top: 10px solid black;
+	background-image: url(../images/green-bg.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-color: #667F02;
+	min-height: 170px;
+	width: 100%;
+	margin-bottom: -150px;
+
+}
+
+.content_left {
+	display: inline-block;
+	width: 70%;
+	padding: 15px;
+	vertical-align: top;
+}
+
+.content_right {
+	display: inline-block;
+	width: 22%;
+	padding: 15px;
+    vertical-align: top;
+}
+
+.main_content{
+	background-color: #efefef;
+}
+
+/* start component header */
+.header h1 {
+	font-family:"century gothic", arial, sans-serif;
+	font-size: 3em;
+    color: #fff;
+    font-weight: normal;
+	margin: 0;
+	text-transform: capitalize;
+	padding-top: 40px;
+	padding-left: 45px;
+}
+
+.header p {
+	color: #fff;
+	text-transform: capitalize;
+	margin-top: 0;
+	padding-left: 45px;
+}
+
+.header .nav-bar {
+	list-style-type: none;
+	background-color: #586E02;
+	border-bottom: 1px solid white;
+	margin: 0;
+	padding: 0;
+}
+
+.header .nav-bar li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.header .nav-bar a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 16px 37px;
+    display: inline-block;
+}
+
+a:hover {
+	background-color: black;
+}
+
+/* end component header */
+
+
+
+/* start component article */
+.article h2 {
+	text-transform: capitalize;
+	border-bottom: 1px solid gray;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.article img {
+	padding: 0 15px;
+}
+/* end component article */
+
+
+
+/* start component social media */
+.social_media{
+
+}
+
+.social_media img{
+	padding: 10px 0px 10px 25px;
+}
+/* end component social media */
+
+.content_right .post h4{
+	margin-top: 30px;
+}
+
+/* start component footer */
+.footer{
+    background-color: #667F02;
+	color: white;
+	text-transform: capitalize;
+}
+
+.footer p {
+	margin: 0;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.footer span {
+	padding: 0 5px;
+}
+/* end component footer */
