@@ -1,0 +1,178 @@
+/*layout*/
+body {
+  background-color: rgb(237, 246, 247);
+  font-size: 0.875em;
+  line-height: 1.125em;
+  font-family: garamond, georgia, times, "times new roman", serif;
+}
+
+.container {
+  width: 940px;
+  margin: auto;
+  background-color: white;
+}
+/*end layout*/
+
+
+
+/*start header*/
+.header .nav-bar {
+  list-style-type: none;
+  background-color: #384e80;
+  margin: 0;
+  float: right;
+  padding-left: 565px;
+}
+
+.header .nav-bar li {
+  float: left;
+}
+
+.header .nav-bar a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  padding: 10px 35px 10px 9px;
+  display: block;
+}
+
+.header a:hover {
+  background-color: #93d9f3;
+}
+
+.header .banner {
+  background-image: url(../images/headerimg.jpg);
+  min-height: 200px;
+  clear: both;
+}
+
+.header .banner h1 {
+  margin: 0;
+  text-transform: capitalize;
+  color: #384e80;
+  font-size: 3.625em;
+  padding: 46px 0px 23px 0px;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.header .banner h1:hover {
+  border-bottom: 1px dashed #384e80;
+}
+/*end header*/
+
+
+
+/*start of main content*/
+.content_left .aside  {
+	margin: -186px 16px 15px 181px;
+}
+
+.content_left {
+  width: 40%;
+  float: left;
+  padding: 17px 30px 176px 46px;
+  border-right: 2px solid #DDDDDD;
+}
+
+.content_left h2 {
+  color: #384e80;
+  text-transform: capitalize;
+  border-bottom: 1px dashed #DDDDDD;
+  padding-bottom: 8px;
+}
+
+.content_left h2:hover {
+  color: #5f822f;
+  border-bottom: 1px dashed #5f822f;
+}
+
+.content_right {
+    width: 22%;
+    float: left;
+    padding-top: 15px;
+    padding: 15px 15px 15px 15px;
+    border-right: 2px solid #DDDDDD;
+}
+
+.links h3 {
+  color: #5f822f;
+  font-size: 1.125em;
+  text-transform: capitalize;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #DDDDDD;
+}
+
+.links img {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.links h3:hover {
+  border-bottom: 1px dashed #5f822f;
+}
+
+.links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  background-image: url(../images/arrow.gif);
+  background-repeat: no-repeat;
+  background-position: 5px 4px;
+  line-height: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.content_right2 {
+  width: 25%;
+  float: right;
+  padding-top: 15px;
+}
+/*end of main content*/
+
+
+
+/*start of footer*/
+.footer {
+  background-color: #384e80;
+  clear: both;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer h3 {
+  color: white;
+  text-transform: capitalize;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .left {
+  float: left;
+  width: 22%;
+}
+
+.footer .right {
+  float: right;
+  width: 22%;
+}
