@@ -1,0 +1,151 @@
+/*layout*/
+body {
+  background-image: url(../images/pattern.png);
+  font-family: "Poppins", sans-serif;
+  line-height: 25px;
+  margin: 0;
+}
+
+.container {
+  background-image: url(../images/content.png);
+  width: 905px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* header */
+.header {
+  background-image: url(../images/logo.jpg);
+  height: 148px;
+  background-repeat: no-repeat;
+  padding-top: 25px;
+  padding-left: 17px;
+  background-color: white;
+  background-position-y: 7px;
+}
+
+.header h1 {
+  color: white;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.header h1 span {
+  color: #05a4d1;
+}
+
+.header p {
+  color: #69655d;
+  margin-top: 7px;
+}
+
+.nav-bar {
+  background-image: url(../images/menu.png);
+  background-repeat: repeat-x;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: right;
+}
+
+.nav-bar li {
+  display: inline-block;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px 7px;
+  margin-top: 7px;
+}
+
+.nav-bar a:hover {
+  background-image: url(../images/menu_selected.png);
+}
+
+/*main_content*/
+.main_content h1 {
+  font-weight: 100;
+  color: #69655d;
+}
+.main_content {
+  overflow: hidden;
+}
+
+.main_content .left_content {
+  float: left;
+  width: 72%;
+  margin: 20px;
+}
+
+.main_content .aside {
+  float: right;
+  width: 20%;
+  margin: 13px;
+}
+
+h2 {
+  font-weight: 100;
+  color: #69655d;
+}
+
+.aside h3 {
+  color: orange;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.aside .date {
+  margin-top: 0;
+  color: gray;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.aside p a {
+  color: #028fd0;
+}
+
+.aside .links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.aside .links li {
+  border-top: 1px solid #8080804d;
+}
+
+.links li:last-of-type {
+  border-bottom: 1px solid #8080804d;
+}
+
+.aside .links a {
+  text-decoration: none;
+  color: #9b9b9b;
+  padding-left: 20px;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+}
+
+.aside .links a:hover {
+  background-image: url(../images/arrow_hover.png);
+  color: #69655d;
+}
+
+/*footer*/
+.footer {
+  background-color: #69655d;
+  border-top: 4px solid #85aaad;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+footer p, a {
+	color: white;
+}
