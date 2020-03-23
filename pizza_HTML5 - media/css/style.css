@@ -1,0 +1,260 @@
+/* Global */
+body {
+	background-color: #EDEAE3;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
+h2 {
+	color: #8F0304;
+	font-size: 1.7em;
+	margin-bottom: 0;
+}
+
+
+h3 {
+	margin: 0;
+	font-size: 1.2em;
+}
+
+ ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+ li {
+	display: inline-block;
+}
+
+ a {
+	text-decoration: none;
+	color: #8F0304;
+	padding-right: 10px;
+}
+
+
+
+/* Start of Header section*/
+header .brand {
+	display: inline-block;
+}
+
+header .section {
+	border-top: 1px solid #938A78;
+	border-bottom: 1px solid #938A78;
+	padding: 15px;
+}
+
+header h1 {
+	margin-bottom: 0;
+	font-size: 2em;
+}
+
+header span {
+	display: block;
+	margin-bottom: 15px;
+	font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+header nav {
+    float: right;
+    padding: 30px 0;
+}
+
+header nav a {
+	color: white;
+	text-transform: uppercase;
+	background-color: #C1B7A7;
+	padding: 10px 30px;
+	border-right: 1px solid #938A78;
+}
+
+header nav li:last-of-type a {
+	border-right: none;
+}
+
+header nav a:hover {
+	background-color: #938A78;
+}
+/* End of Header section*/
+
+
+/* Start of Articles*/
+.articles {
+	width: 73%;
+	display: inline-block;
+
+}
+
+article {
+	background-color: white;
+	margin: 28px 0;
+	padding: 15px;
+	box-shadow: 1px 2px 0px 2px #dedad2;
+}
+
+.paragraph {
+	width: 49%;
+	display: inline-block;
+}
+/* End of Articles*/
+
+
+/* Start of asides*/
+.asides {
+	width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 28px 0 0 20px;
+
+}
+
+.asides aside {
+	background-color: white;
+	margin-bottom: 15px;
+	padding: 10px;
+	box-shadow: 1px 2px 0px 2px #dedad2;
+}
+/* End of asides*/
+
+
+/* Start of Footer section*/
+footer {
+	border-top: 1px solid #938a78;
+	padding-left: 15px;
+}
+/* End of Footer section*/
+
+
+/* tablet styles */
+@media screen and (max-width: 768px){
+	.container { 
+		width: 100%; 
+	}
+	
+	header {
+		width: 90%;
+		margin: auto;
+	}
+	
+	header nav a {
+		padding: 10px 55px;
+	}
+	
+	main {
+		width: 90%;
+		margin: auto;
+	}
+	
+	header nav { 
+		float: none;
+		padding: 0;
+	}
+	
+	header span {
+    margin-bottom: 0; 
+	}
+	
+	.paragraph { 
+		width: 100%;
+		position: relative;
+        top: 436px;
+	}
+	
+	article{
+		margin: 15px 0;
+		width: 129%;
+	}
+	
+	img {
+		position: relative;
+        top: -221px;
+		width: 100%
+	}
+	
+	.asides {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.asides aside {
+		vertical-align: top;
+		min-height: 215px;
+		display: inline-block;
+		width: 43%;
+		background-color: #c1b7a7;
+		margin-bottom: 15px;
+		margin-right: 24px;
+	}
+	
+	.asides aside p {
+		color: white;
+	}
+	
+	footer {
+		width: 90%;
+		margin: auto;
+	}
+	
+}
+
+/* phone styles */
+@media screen and (max-width: 480px){
+	.container { 
+		width: 100%; 
+	}
+	
+	h2 {
+		font-size: 1.5em;
+	}
+	
+	header h1 {
+		font-size: 3em;
+	}
+	
+	p {
+		font-size: 1.2em;
+	}
+	
+	header nav a {
+		display: block;
+		border-bottom: 1px solid #907d5e;
+		text-align: center;
+	}
+
+	header nav li {
+		display: block;
+	}
+	
+	header .section {
+		display: none;
+	}
+	
+	header .brand {
+		text-align: center;
+	}
+	
+	header span {
+		font-size: 2.4em;
+	}
+	
+	img {
+		display: none;
+	}
+	
+	.paragraph {
+		top: 0px;
+	}
+	
+	.asides {
+		display: none;
+	}
+	
+}
