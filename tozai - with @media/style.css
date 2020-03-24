@@ -1,0 +1,216 @@
+/* global styles */
+body {
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	background-color: #ffffed;
+}
+
+
+.container {
+	width: 980px;
+	margin: auto;
+	background-color: #b4c4ba;
+}
+
+h1{
+	color: #132c5a;
+	font-size: 3em;
+	text-align: center;
+}
+
+h2 {
+	margin-top: 139px;
+}
+
+/* header styles */
+header {
+	background-image: url(images/basin_bg.jpg);
+	background-repeat: no-repeat;
+	height: 180px;
+	overflow: hidden;
+}
+
+nav {
+    padding: 20px;
+}
+
+#mobileicon {
+	display: none;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+ nav li {
+	display: inline-block;
+}
+
+ nav a {
+	text-decoration: none;
+    color: white;
+    background-color: #132c5a;
+    padding: 8px 66px;
+    border-radius: 5px;
+}
+
+/* main content styles */
+main {
+	margin: 0 20px;
+}
+
+/* col-left styles */
+.col-left {
+	display: inline-block;
+	width:70%;
+	background-color: white;
+	margin: 0 22px 10px 0;
+	border-radius: 10px;
+	background-image: url(images/chef.jpg);
+	background-repeat: no-repeat;
+	padding: 0 10px;
+}
+
+.col-left .tuna-img {
+    float: left;
+    margin: 0px 10px 10px 0; 
+}
+
+.col-left p:last-of-type {
+	clear: both;
+}
+
+/* col-right styles */
+.col-right {
+	display: inline-block;
+	width:23%;
+	vertical-align: top;
+	background-color: white;
+	padding: 0 10px;
+	border-radius: 10px;
+	background-image: url(images/sake.jpg);
+	background-repeat: no-repeat;
+    background-position-y: bottom;
+    height: 785px;
+}
+
+h2 + p img {
+	float: right;
+}
+
+/* footer styles */
+footer {
+	background-color: #132c5a;
+	color: white;
+	padding: 5px 20px;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* tablet styles */
+@media screen and (max-width: 700px){
+	
+	.container {
+		width: 700px;
+	}
+	
+	header {
+		background-image: url(images/basin_bg_tab.jpg);
+		padding: 0;
+	}
+	
+	nav a {
+		padding: 8px 38px;
+	}
+	
+	.col-left {
+		width: 96%;
+	} 
+	
+	.col-right {
+		width: 96%;
+		background-image: url(images/sake_tab.jpg);
+		background-position-x: right;
+		height: 496px;
+		margin-bottom: 10px;
+	}
+	
+	.col-right p {
+		width: 47%;
+	}
+	
+}
+
+/* phone styles */
+@media screen and (max-width: 480px){
+	
+	.container {
+		width: 480px;
+	}
+	
+	header {
+		background-image: url(images/basin_bg_phone.jpg);
+		height: 75px;
+	}
+	
+	nav {
+		display: none;
+	}
+	
+	#mobileicon {
+		display: block;
+		width: 35px;
+		height: 39px;
+		float: right;
+		margin-right: 10px;
+		margin-top: 10px;
+		font-size: 2.5em;
+	}
+	
+	#mobileicon:hover {
+		cursor: pointer;
+	}
+	
+	.col-right {
+		width: 96%;
+		background-image: url(images/sake_tab.jpg);
+		background-position-x: 314px;
+		height: 545px;
+		margin-bottom: 10px;
+	}
+	
+	.col-right p {
+		width: 65%;
+	}
+	
+	.col-left  {
+		margin: 0 0 10px 0;
+	}
+	
+	.col-left .tuna-img {
+		float: none;
+		margin: auto;
+	}
+
+	img {
+		display: block;
+		padding-bottom: 15px;
+		width: 350px;
+		margin: auto;
+	}
+	
+	h2 + p img {
+		float: none; 
+	}
+	
+	h1 {
+		margin: 15px 0 0 0;
+		font-size: 2.5em;
+	}
+	
+	
+}
