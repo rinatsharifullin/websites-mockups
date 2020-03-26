@@ -1,0 +1,257 @@
+/* GLOBAL styles */
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #bbbb9a;
+}
+
+h1 {
+    border-bottom: 1px solid #838369;
+    padding: 30px 0 20px;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 0 2%;
+}
+
+/* HEADER styles */
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    padding: 2%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+header .menu {
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+    max-height: 0;
+    transition: max-height 300ms ease-in-out;
+}
+
+header .menu li {
+    border-bottom: 1px solid #838369;
+}
+
+header #toggle:checked + .menu {
+    max-height: 500px;
+}
+
+header label {
+    text-align: right;
+    cursor: pointer;
+}
+
+header input {
+    display: none; /* because I want to hide the chechbox. */
+}
+
+header .logo-container {
+    margin-bottom: -40px;
+}
+
+
+
+/* GALLERY styles */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+}
+
+.gallery .img-container {
+    flex-grow: 1;
+}
+
+.gallery .img-container img {
+    width: 100%;
+}
+
+.gallery .img-description {
+    display: none;
+}
+
+
+
+/* THUMBNAIL GALERY styles */
+.thumbnails-container {
+    display: flex;
+    padding: 0;
+}
+
+.thumbnail {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.thumbnail img {
+    border: 1px solid white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.thumbnail p {
+    margin: 0;
+    display: none;
+}
+
+
+
+/* SUB-BANNER styles */
+.sub-banner {
+    display: none;
+}
+
+
+/* MAIN styles */
+
+
+main .articles {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+main article {
+    padding: 0 5%;
+}
+
+main article a {
+    color: #bababa;
+}
+
+main .articles img {
+    width: 180px;
+    padding-right: 6%;
+    border-right: 1px solid #838369;
+}
+
+
+
+/* FOOTER styles */
+footer {
+    background-color: #3a3a3a;
+    overflow: hidden;
+    font-size: .8em;
+    text-align: center;
+    margin: 20px 2% 0;
+}
+
+
+
+@media screen and (min-width: 769px) {
+    /* HEADER styles */
+    header nav {
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    header label {
+        display: none;
+    }
+
+    header .menu {
+        display: flex;
+        flex-grow: 1;
+        padding: 0;
+        max-height: initial;
+        justify-content: flex-end;
+    }
+
+    header #toggle:checked + .menu {
+        display: flex;
+    }
+
+    header .menu li {
+        margin-right: 2%;
+        border-bottom: none;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+
+    /* GALLERY styles */
+    .gallery .img-description {
+        display: block;
+    }
+
+    .gallery {
+        flex-direction: row;
+        padding: 0 2%;
+    }
+
+    /* THUMBNAIL GALERY styles */
+    .thumbnails-container {
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 35%;
+        box-sizing: border-box;
+    }
+
+    .thumbnails-container li {
+        border-bottom: none;
+    }
+
+    .thumbnail img {
+        margin-right: 10px;
+        border: 1px solid white;
+    }
+
+    .thumbnail {
+        display: flex;
+        text-align: left;
+        margin-bottom: 8%;
+    }
+
+    .thumbnail p {
+        display: block;
+    }
+
+    /* SUB-BANNER styles */
+    .sub-banner {
+        display: block;
+        padding: 1% 2%;
+        background-color: #3a3a3a;
+    }
+
+    /* MAIN styles */
+    main .articles-container {
+        display: flex;
+    }
+}
