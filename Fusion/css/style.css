@@ -1,0 +1,731 @@
+/* GLOBAL styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1900px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: 'Spectral', serif;
+    font-size: 3em;
+}
+
+h3 {
+    font-family: "roboto";
+    font-size: 1.6em;
+    margin: 8% 0;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Spectral', serif;
+    font-size: 1.4em;
+}
+
+h5 {
+    font-family: 'Spectral', serif;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+p {
+    line-height: 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #F2745F;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 2%;
+    font-weight: 600;
+    border: none;
+}
+
+
+
+/* BUTTON ORANGE-WHITE */
+.btn-orange {
+    background-color: #f2745f;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn-orange:hover {
+    background-color: #ededed;
+    color: #f2745f;
+}
+
+
+
+/* BUTTON WHITE-ORANGE */
+.btn-white {
+    background-color: white;
+    color: #f2745f;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-white:hover {
+    color: white;
+    background-color: #F3826F;
+}
+
+
+
+/* BUTTON TRANSPARENT */
+.btn-transparent {
+    background-color: #ffffff00;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid white;
+}
+
+.btn-transparent:hover {
+    color: #F3826F;
+    border: 2px solid #F3826F;
+}
+
+
+
+/* HEADINGS and P styles */
+h3.black {
+    color: black;
+}
+
+h3.white {
+    color: white;
+}
+
+p.gray,
+span.gray {
+    color: gray;
+}
+
+/* HEADER styles */
+header {
+    background-color: #EAF0FF;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header input {
+    display: none; /* to hide the checkbox. */
+}
+
+header label {
+    cursor: pointer;
+}
+
+
+/* NAV styles */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav .bg-menu {
+    background-color: #F2745F;
+    padding: 6px 11px;
+    border-radius: 4px;
+}
+
+nav .toggle-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+nav .fa {
+    color: white;
+}
+
+nav .menu  {
+    margin: 0;
+    max-height: 0;
+    transition: max-height 400ms ease-in-out;
+    background-color: #F1F4FD;
+}
+
+#toggle:checked + .menu {
+    max-height: 500px;
+}
+
+nav .menu li {
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+}
+
+nav .menu li:last-of-type {
+    border-bottom: none;
+}
+
+nav .menu a {
+    text-transform: uppercase;
+}
+
+
+
+/* MEDIA QUERY (header) styles*/
+@media screen and (min-width: 768px) {
+    h1 {
+        margin: 0;
+    }
+
+    header nav .toggle-container {
+        display: none;
+    }
+
+    header nav .menu {
+        display: flex;
+        background-color: #eaf0ff;
+        justify-content: center;
+        max-height: initial; /*because when I added the transition I applied max-height: 0; initial:default value(in the browser)*/
+    }
+
+    header nav .menu li {
+        margin-right: 6%;
+        border-bottom: none;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    header {
+        padding: 0 3%;
+    }
+}
+
+
+
+/* BANNER styles */
+.banner {
+    background-image: url(../img/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 30% 0;
+}
+
+.banner > div {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    padding: 0 3%;
+    color: white;
+}
+
+.banner p:first-of-type {
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 990px) {
+    .banner {
+        padding: 10% 0;
+    }
+
+    .banner > div {
+        max-width: 500px;
+    }
+}
+
+
+
+/* DELI-FOOD styles */
+.deli-food {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.deli-food  .img-container {
+    padding: 15% 9% 0;
+}
+
+.deli-food .img-container:last-of-type {
+    padding-top: 0;
+    padding-bottom: 15%;
+}
+
+.deli-food .img-container img {
+    width: 100%;
+    display: flex;
+}
+
+
+
+/* ORDER-NOW styles */
+.order-now {
+    text-align: center;
+    padding: 9%;
+    background-color: #f2745f;
+    color: white;
+}
+
+.order-now p {
+    background-color: #F3826F;
+    padding: 5%;
+}
+
+.order-now p span {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.order-now span {
+    display: block;
+    position: relative;
+}
+
+/* to create the circle (OR) */
+.order-now > span::after {
+    content: "";
+    display: inline-block;
+    border: 1px solid #cb6d66;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -6px;
+    right: 0;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .deli-food {
+        flex-direction: row;
+    }
+
+    .deli-food .order-now {
+        flex-basis: 54%;
+        padding: 4%;
+    }
+
+    .deli-food .img-container {
+        padding: 7% 0%;
+    }
+
+    .deli-food .img-container:last-of-type {
+        padding-top: 7%;
+        padding-bottom: 0;
+    }
+}
+
+
+
+/* COOK-SECTION -styles */
+.cook-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cook-section img {
+    border: 7px solid #eaf0ff;
+    border-radius: 97px;
+}
+
+.cook-section div {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .cook-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cook-section div {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .cook-section div {
+        flex-basis: 25%;
+    }
+}
+
+
+
+/* RESERVATION styles */
+.reservation {
+    background-image: url(../img/book-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 9% 4% 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* FORM styles */
+form {
+    background-color: white;
+    overflow: hidden;
+    padding: 0 5% 8%;
+}
+
+form select, 
+form input {
+    padding: 8px 0 8px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 16px 0 10px;
+    color: #807d7d;
+    width: 100%;
+}
+
+form .form-elements {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+@media screen and (min-width: 990px) {
+    .reservation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .reservation h3 {
+        margin: 0 0 5%;
+        min-width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: space-between;
+    }
+
+    form h4 {
+        min-width: 100%;
+    }
+
+    form select,
+    form input {
+        flex-basis: 45%;
+    }
+
+    form .form-actions {
+        flex-basis: 45%;
+        align-items: center;
+    }
+}
+
+
+/* APP styles */
+.app {
+    background-color: #f2745f;
+    padding: 15% 3%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .app {
+        padding: 6% 3%;
+    }
+
+    .app h3 {
+        margin: 0;
+    }
+}
+
+
+
+/* FEATURED FOOD styles */
+.featured-food {
+    margin: 20% 3% 30%;
+}
+
+.featured-food h4 {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.featured-food article {
+    background-color: #EAF0FF;
+    padding: 3% 9%;
+}
+
+/* BG-CONTAINER styles */
+.bg-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 215px;
+    width: 100%;
+    position: relative;
+}
+
+/* this is to add the price in every img. */
+.bg-container::after {
+    content: attr(data-price);
+    font-weight: 600;
+    padding: 8px;
+    color: #F2745F;
+    background-color: #F4F1EE;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bg-container.img-1 {
+    background-image: url(../img/breakfast_item.jpg);
+}
+
+.bg-container.img-2 {
+    background-image: url(../img/lunch_item.jpg);
+}
+
+.bg-container.img-3 {
+    background-image: url(../img/dinner_item.jpg);
+}
+
+.food-description {
+    background-color: white;
+    overflow: hidden;
+    padding: 5%;
+}
+
+@media screen and (min-width: 768px) {
+    .bg-container {
+        height: 355px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+   .featured-food {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0% 3% 15%;
+   }
+
+   .featured-food h3 {
+       min-width: 100%;
+   }
+
+   .featured-food article {
+        background-color: #EAF0FF;
+        padding: 3% 2%;
+        margin-right: 3%;
+        flex-basis: 30%;
+    }
+}
+
+
+
+/* BLOG styles */
+.blog {
+    padding: 6% 3% 25%;
+    background-color: #EAF0FF;
+}
+
+.blog article {
+    background-color: #EAF0FF;
+    padding: 3% 9%;
+}
+
+.blog article .blog-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 237px;
+    width: 100%;
+    position: relative;
+}
+
+/* this is to add the date in every img. */
+.blog .blog-container::after {
+    content: attr(data-date);
+    font-weight: 600;
+    padding: 8px;
+    color: #F2745F;
+    background-color: #F4F1EE;
+    position: absolute;
+}
+
+.blog-container.blog-1 {
+    background-image: url(../img/blog_post_01.jpg);
+}
+
+.blog-container.blog-2 {
+    background-image: url(../img/blog_post_02.jpg);
+}
+
+.blog-container.blog-3 {
+    background-image: url(../img/blog_post_03.jpg);
+}
+
+.blog-container.blog-4 {
+    background-image: url(../img/blog_post_04.jpg);
+}
+
+article .blog-description {
+    background-color: white;
+    overflow: hidden;
+    padding: 5%;
+}
+
+@media screen and (min-width: 768px) {
+    .blog article .blog-container {
+        height: 355px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+   .blog {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .blog h3 {
+    min-width: 100%;
+   }
+
+   .blog article {
+    padding: 1% 1% 8%;
+    display: flex;
+    flex-basis: 50%;
+   }
+
+   .blog article .blog-container {
+       flex-basis: 50%;
+   }
+
+   article .blog-description {
+        flex-basis: 50%;
+   }
+ }
+
+
+/* SIGN-UP styles */
+.sign-up {
+    background-image: url(../img/signup-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2% 0;
+    text-align: center;
+}
+
+.sign-up input {
+    padding: 10px 6px;
+    border-radius: 3px;
+    border: none;
+}
+
+.sign-up button {
+    max-width: 30%;
+    margin: 3% auto;
+}
+
+@media screen and (min-width: 990px) {
+    .sign-up {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5% 32% 0;
+    }
+    
+    .sign-up h3 {
+        margin: 5% 0;
+        min-width: 100%;
+    }
+
+    .sign-up input,
+    .sign-up button {
+        flex-basis: 66%;
+        max-height: 40px;
+        margin: 0;
+    }
+
+}
+
+
+
+/* FOOTER styles */
+footer {
+    padding: 8% 2%;
+    background-color: #363E50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-media a {
+    margin-right: 10px;
+}
+
+footer .fa {
+    color: white;
+}
+
+footer span {
+    color: #F2745F;
+}
+
+@media screen and (min-width: 990px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 4% 2%;
+    }
+}
