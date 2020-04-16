@@ -21,6 +21,21 @@ a {
     text-decoration: none;
 }
 
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    border-bottom: 1px solid #4e4d4d;
+    padding-bottom: 5px;
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
 
 
 /* HEADER styles */
@@ -31,14 +46,16 @@ header {
     padding: 0 3%;
 }
 
-/* (>*) apply to all elements inside the container */
-header > * { 
-    flex-basis: 50%;
-    flex-grow: 1;
+header .logo {
+    flex-basis: 70%;
 }
 
 header .logo img {
-    max-width: 100%; /* if img size is larger than container I need to limit its size to container width!!!. */
+    width: 230px;
+}
+
+header .fa-bars {
+    font-size: 2em;
 }
 
 header a, 
@@ -51,6 +68,7 @@ header .icons {
     display: flex;
     justify-content: center;
     margin: 50px 0 10px;
+    flex-grow: 1;
 }
 
 header .icons p {
@@ -66,6 +84,7 @@ header nav {
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
+    flex-basis: 30%;
 }
 
 header label {
@@ -83,6 +102,10 @@ header input {
 
 header .menu  {
     display: none; /* to hide the ul, I only need to see the icon. */
+}
+
+header .menu a {
+    font-size: 1.3em;
 }
 
 #toggle:checked + .menu {
@@ -126,6 +149,7 @@ header a:hover {
     color: white;
     padding: 0 2%;
     text-align: center;
+    font-size: 1.4em;
 }
 
 
@@ -141,29 +165,21 @@ main section img {
     margin: 10px auto;
 }
 
-main section .img-container {
+main section .center-image {
     display: flex;
     flex-direction: column;
-}
-
-main h1 {
-    border-bottom: 1px solid #4e4d4d;
-    padding-bottom: 5px;
-}
-
-main h2 {
-    font-size: 1.3em;
 }
 
 
 
 /* ASIDE styles */
 aside {
-    padding: 0 2%;
+    padding: 3% 2% 0;
 }
 
-aside h3 {
+aside h2 {
     color: #943749;
+    font-size: 1.5em;
 }
 
 
@@ -182,9 +198,14 @@ footer {
 /* MEDIA QUERY styles*/
 @media screen and (min-width: 500px) {
     
-    main section .img-container {
+    main section .center-image {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+
+    main section img {
+        margin: 10px 2px;
     }
 
     aside img {
@@ -203,7 +224,6 @@ footer {
     header .icons {
         margin: 0;
         display: block;
-        text-align: end;
     }
 
     header .icons p {
@@ -216,6 +236,7 @@ footer {
         order: 2;
         background-color: #4e4d4d;
         justify-content: flex-start;
+        flex-grow: 1;
     }
 
     header label {
@@ -225,6 +246,10 @@ footer {
     header .menu {
         display: flex;
         padding-left: 2%;
+    }
+
+    header .menu a {
+        font-size: 1.2em;
     }
 
     header li {
@@ -240,8 +265,12 @@ footer {
         margin: 0 20px 0 0;
     }
 
-    main section .img-container {
+    main section .center-image {
         justify-content: center;
+    }
+
+    main section img {
+        margin: 10px 8px;
     }
 
     /* ASIDE styles */
