@@ -226,7 +226,8 @@ main h2 {
         height: 36px;
         position: absolute;
         top: 59%;
-        right: 48.5%;
+        right: 50%;
+        transform: translate(50%);
         background-color: white;
         border-radius: 50%;
     }
@@ -260,6 +261,7 @@ main h2 {
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 form input,
